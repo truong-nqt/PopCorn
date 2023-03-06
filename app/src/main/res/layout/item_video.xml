@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="videos"
+            type="com.truongnqt.popcorn.network.videos.Video" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="100dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:id="@+id/image_view_video"
+                android:layout_width="240dp"
+                android:layout_height="135dp"
+                app:image='@{videos.key}'
+                android:scaleType="fitXY"
+                app:place='@{@drawable/nav_image}'
+                tools:ignore="ContentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_view_video_name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="@{videos.name}"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</layout>

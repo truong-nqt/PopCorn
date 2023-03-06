@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/activity_about.xml" value="0.192481884057971" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/activity_movie_detail.xml" value="0.192481884057971" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/bottom_sheet_movie_detail.xml" value="0.1" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/content_about.xml" value="0.192481884057971" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/fragment_movie_detail.xml" value="0.1" />
+        <entry key="..\:/Android Projects/PopCorn/app/src/main/res/layout/fragment_movies.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/drawable/background_radius.xml" value="0.288" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/drawable/bg_round_8dp.xml" value="0.288" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/activity_movie_detail.xml" value="0.17831813576494426" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/fragment_movie_discover.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/fragment_movies.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/item_movide_discover.xml" value="0.33" />
+        <entry key="..\:/Android/AndroidPrjs/popcorn/app/src/main/res/layout/item_movie_discover.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/background_radius.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/background_splash.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/bg_imob.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/bg_indicator.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/cursor.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/gradient_background.xml" value="0.2245" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/gradient_background_bottom_sheet.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/gradient_background_btnvgt.xml" value="0.2245" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_favorite.xml" value="0.2245" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_genres.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_imob.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_in_theatre.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_mic.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_movies.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_notification.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_notification_background.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_search.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/ic_tv.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/movie_card_gradient.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/drawable/shape_bg_search.xml" value="0.228" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_movie_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_person_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_test.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_tvshow_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_view_all_movies.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/activity_view_movies_tv_show_in_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/bottom_sheet_movie_detail.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_movie_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_person_detail.xml" value="0.32170542635658916" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_search.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_tvshow_detail.xml" value="0.35888888888888887" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_view_all_movies.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/content_view_all_tvshows.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_favourite_movies.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_favourite_tv_shows.xml" value="0.39141414141414144" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_favourites.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_movie_detail.xml" value="0.67" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_movie_discover.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_movies.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_person_detail.xml" value="0.5231884057971015" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_search.xml" value="0.2840909090909091" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_tv_shows.xml" value="0.42813455657492355" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_tvshow_detail.xml" value="0.12" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_all_movies.xml" value="0.3181818181818182" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_all_tvshows.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_movies_tv_show_in_menu.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_show_in_menu.xml" value="0.44722222222222224" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_show_in_menu_tv.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/fragment_view_show_menu.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_cast.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_cast_tv.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_movie_discover.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_movie_show_in_menu.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_search_result.xml" value="0.5251989389920424" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_in_menu_movie.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_in_movie.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_in_tv.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_large.xml" value="0.3427835051546392" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_large_movie.xml" value="0.39488636363636365" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_large_tv.xml" value="0.41492537313432837" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_of_cast.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_of_cast_tv.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_small.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_small_movie.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_show_small_tv.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_tv_show_in_menu.xml" value="0.2921875" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/item_video.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/layout/nav_header_main.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/menu/bottom_nav_menu.xml" value="0.55" />
+        <entry key="..\:/AndroidProjects/PopCornTemplate/app/src/main/res/menu/main.xml" value="0.55" />
+        <entry key="..\:/Workspace/PopCorn-master/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Workspace/PopCorn-master/app/src/main/res/layout/app_bar_main.xml" value="0.3546875" />
+        <entry key="..\:/Workspace/PopCorn-master/app/src/main/res/layout/content_main.xml" value="0.3546875" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="12">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="9" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="11">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="5" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

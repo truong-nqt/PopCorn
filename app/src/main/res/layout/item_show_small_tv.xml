@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="tv"
+            type="com.truongnqt.popcorn.network.tvshows.TVShowBrief" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_show_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:elevation="100dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="20dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view_show_card"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="fitXY"
+                app:imageUrl="@{tv.posterPath}"
+                android:layout_width="145dp"
+                android:layout_height="214dp"
+                app:placeHolder="@{@drawable/nav_image}"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

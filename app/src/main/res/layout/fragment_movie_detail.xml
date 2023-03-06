@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.truongnqt.popcorn.movieDetailFragment.MovieDetailFragment">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewmodel"
+            type="com.truongnqt.popcorn.movieDetailFragment.MovieViewModel" />
+        <variable
+            name="movie"
+            type="com.truongnqt.popcorn.network.movies.Movie" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_toolbar_movie"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="parallax">
+
+            <FrameLayout
+                android:id="@+id/frame_layout_backdrop_movie_detail"
+                android:layout_width="0dp"
+                android:layout_height="310dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_view_backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    app:imageUrl="@{movie.backdropPath}"
+                    android:scaleType="fitXY"
+                    app:placeHolder="@{@drawable/nav_image}"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/loading_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/progress_bar_backdrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/gray"
+                app:indicatorName="LineScalePulseOutRapidIndicator"/>
+        </FrameLayout>
+        <include
+            android:id="@+id/bottom_sheet_movie_detail"
+            layout="@layout/bottom_sheet_movie_detail" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_tvshow_detail">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="tvShow"
+            type="com.truongnqt.popcorn.network.tvshows.TVShow" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_content_tvShow_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.truongnqt.popcorn.activities.TVShowDetailActivity">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_content_tvShow_detail"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_rating_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/image_view_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_star_black_24dp"
+                    app:tint="#F9A825"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/text_view_rating_tv_show_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/image_view_rating"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text='@{String.format("%.1f", tvShow.voteAverage)}'/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/text_view_rating_tv_show_detail"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/_10"
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/image_button_fav_tv_show_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:src="@mipmap/ic_favorite_border_white_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/image_button_share_tv_show_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/ic_share_white_24dp"
+                    android:layout_toStartOf="@+id/image_button_fav_tv_show_detail"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    tools:ignore="ContentDescription"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_view_overview_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:maxLines="7"
+                android:textColor="@color/white"
+                android:text="@{tvShow.overview}"/>
+
+            <TextView
+                android:id="@+id/text_view_read_more_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/read_more"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:id="@+id/layout_details_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/tv_show_details"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_view_details_tv_show_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_trailer_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/videos"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_trailers_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_video"/>
+
+            <View
+                android:id="@+id/line_view_video_cast"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_cast_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/cast"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_cast_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_cast"/>
+
+            <View
+                android:id="@+id/line_view_cast_similar"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_view_similar_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/similar_tv_shows"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_similar_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_show_small_movie"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

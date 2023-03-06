@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_genres"
+        android:icon="@drawable/ic_genres"
+        android:iconTint="@android:color/darker_gray"
+        android:title="@string/genres" />
+    <item
+        android:id="@+id/nav_tv"
+        android:icon="@drawable/ic_tv"
+        android:iconTint="@android:color/darker_gray"
+        android:title="@string/tv_series" />
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@drawable/ic_movies"
+        android:iconTint="@android:color/darker_gray"
+        android:title="@string/movies" />
+    <item
+        android:id="@+id/nav_in_theatre"
+        android:icon="@drawable/ic_in_theatre"
+        android:iconTint="@android:color/darker_gray"
+        android:title="@string/trending" />
+</menu>

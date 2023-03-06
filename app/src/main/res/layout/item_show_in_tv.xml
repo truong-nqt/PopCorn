@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="tv"
+            type="com.truongnqt.popcorn.network.tvshows.TVShowBrief" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        tools:ignore="ContentDescription">
+
+        <FrameLayout
+            android:id="@+id/contentBg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_round_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/posterImg" />
+
+        <ImageView
+            android:id="@+id/posterImg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitXY"
+            app:imageUrl="@{tv.posterPath}"
+            app:layout_constraintBottom_toBottomOf="@id/contentBg"
+            app:layout_constraintDimensionRatio="780:1170"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeHolder="@{@drawable/nav_image}" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="@{tv.name}"
+            android:textColor="@color/black_1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/ratingPoint"
+            app:layout_constraintStart_toEndOf="@id/posterImg"
+            app:layout_constraintTop_toTopOf="@id/contentBg"
+            tools:text="sadas dasd a da sdasd asdasd asdasd" />
+
+        <TextView
+            android:id="@+id/ratingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="end"
+            android:text='@{String.format("%.1f", tv.voteAverage) + "\u2605"}'
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/contentBg"
+            app:layout_constraintStart_toEndOf="@id/title"
+            app:layout_constraintTop_toTopOf="@id/contentBg"
+            android:visibility='@{tv.voteAverage == null ? View.GONE : View.VISIBLE}'
+            tools:text="10.0" />
+
+        <TextView
+            android:id="@+id/releaseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@{tv.releaseDate}"
+            android:textColor="@color/gray_1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/title"
+            app:layout_constraintStart_toEndOf="@id/posterImg"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="Release date: 12/12/2012" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

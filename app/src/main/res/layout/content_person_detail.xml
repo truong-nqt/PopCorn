@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_person_detail">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="person"
+            type="com.truongnqt.popcorn.network.people.Person" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_content_person_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.truongnqt.popcorn.personDetailFragment.PersonDetailFragment">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_content_tvShow_detail"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_bio_header_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/biography"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:visibility="@{person.biography.length() >= 1 ? View.VISIBLE : View.GONE}"/>
+
+            <TextView
+                android:id="@+id/text_view_bio_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:maxLines="7"
+                android:textColor="@color/white"
+                android:text="@{person.biography}"/>
+
+            <TextView
+                android:id="@+id/text_view_read_more_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/read_more"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:visibility="@{person.biography.length() >= 1 ? View.VISIBLE : View.GONE}"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/text_view_movie_cast_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/movie_cast"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_movie_cast_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_show_of_cast"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:id="@+id/text_view_tv_cast_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_cast"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_tv_cast_person_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_show_of_cast_tv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>
