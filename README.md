@@ -3,10 +3,10 @@
 <b>Awesome Material Design Movies and TV Shows App.</b>
 
 # Have a Look
-|     |     |                              |
-| --- | --- |------------------------------|
-| ![](/images/movies.gif) | ![](/images/favorites.gif) | ![](/images/search_text.gif) |
-| ![](/images/search_text.gif) |
+|                             |     |                              |
+|-----------------------------| --- |------------------------------|
+| ![](/images/movies.gif)     | ![](/images/favorites.gif) | ![](/images/search_text.gif) |
+| ![](/images/search_mic.gif) |
 
 # Implementations
 <ul>
