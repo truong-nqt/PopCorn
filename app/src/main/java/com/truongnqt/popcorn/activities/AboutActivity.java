@@ -59,14 +59,14 @@ public class AboutActivity extends AppCompatActivity {
             v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
             Intent feedbackIntent = new Intent(Intent.ACTION_SENDTO);
             feedbackIntent.setData(Uri.parse("mailto:"));
-            feedbackIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"hitanshudhawan1996@gmail.com"});
+            feedbackIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"truongnqt.dev@gmail.com"});
             feedbackIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback: " + getResources().getString(R.string.app_name));
             startActivity(feedbackIntent);
         });
 
         binding.included.cardViewSourceCodeOnGithub.setOnClickListener(v -> {
             v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
-            String githubLink = "https://github.com/hitanshu-dhawan/" + getResources().getString(R.string.app_name);
+            String githubLink = "https://github.com/truongnqt-d/" + getResources().getString(R.string.app_name);
             Intent githubIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(githubLink));
             startActivity(githubIntent);
         });
