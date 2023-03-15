@@ -1,7 +1,5 @@
 <img src="/images/web_hi_res_512.png" height=250 width=250></img>
 
-<b>Awesome Material Design Movies and TV Shows App.</b>
-
 # Have a Look
 |                             |     |                              |
 |-----------------------------| --- |------------------------------|
@@ -20,10 +18,8 @@
 </ul>
 
 # API Keys
-PopCorn uses [The Movie DB](https://www.themoviedb.org/) API in order to fetch all the Movies and TV Shows Data.
-<br>
-To run this application on your machine you have to issue an API KEY from The Movie DB and place it in your strings resource folder.
-<br>
+Để chạy ứng dụng này trên máy của bạn, bạn phải cấp API KEY từ [The Movie DB](https://www.themoviedb.org/) 
+và đặt nó vào thư mục strings.xml của bạn.
 ```
 <string name="MOVIE_DB_API_KEY">YOUR API KEY HERE</string>
 ```
